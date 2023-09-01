@@ -6,6 +6,7 @@ public class Student {
 
     public Student(){    // 생성자가 아무것도 없는게 필요하면 다른 생성자 존재시 만들어야 한다. 아무것도 없으면 만들지 않아도 된다.
     }
+    int alpha;
 
     public Student(String hno, String name) {
         this.hno = hno;
