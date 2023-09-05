@@ -12,7 +12,7 @@ public class WordCRUD implements ICRUD{         // icrud interface 함수 구현
         list = new ArrayList<>();
     }
 
-    public void addWord(){
+    public void addItem(){
         Word one = (Word)add();
         list.add(one);
         System.out.println("새 단어가 단어장에 추가되었습니다. ");
@@ -83,5 +83,21 @@ public class WordCRUD implements ICRUD{         // icrud interface 함수 구현
         Word word = list.get(idlist.get(id-1));
         word.setMeaning(meaning);
         System.out.println("단어가 수정되었습니다. ");
+    }
+
+    public void deleteItem() {
+        System.out.println("=> 삭제할 단어 검색 : ");
+        String keyword = s.next();
+        ArrayList<Integer> idlist = this.listAll(keyword);
+        System.out.print("=> 삭제할 번호 선택 : ");
+        int id = s.nextInt();
+        s.nextLine();
+        System.out.print("=> 정말로 삭제하실래요(Y/N) ");
+        String ans = s.nextLine();
+        if(ans.equalsIgnoreCase("Y")) {
+            list.remove(idlist.get(id - 1));
+            System.out.println("단어가 삭제 되었습니다. ");
+        }
+        System.out.println("취소 되었습니다. ");
     }
 }
