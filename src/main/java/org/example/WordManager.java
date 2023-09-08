@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class WordManager {
@@ -7,13 +8,19 @@ public class WordManager {
     Scanner s = new Scanner(System.in);
     WordCRUD wordCRUD;
 
+
+
+
     WordManager(){
         wordCRUD = new WordCRUD(s);
     }
    public void start() {
        while(true){
            int menu = selectMenu();
-           if(menu == 0) break;
+           if(menu == 0) {
+               System.out.println("프로그램 종료 다음에 만나요~");
+               break;
+           }
            if(menu == 4){
                wordCRUD.addItem();
            }
@@ -25,6 +32,9 @@ public class WordManager {
            }
            else if(menu == 6){
                wordCRUD.deleteItem();
+           }
+           else if(menu == 7){
+               wordCRUD.StoreItem();
            }
        }
 
