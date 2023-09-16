@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class WordManager {
@@ -14,7 +15,9 @@ public class WordManager {
     WordManager(){
         wordCRUD = new WordCRUD(s);
     }
-   public void start() {
+   public void start() throws IOException {
+
+        wordCRUD.loadFile();
        while(true){
            int menu = selectMenu();
            if(menu == 0) {
@@ -34,7 +37,13 @@ public class WordManager {
                wordCRUD.deleteItem();
            }
            else if(menu == 7){
-               wordCRUD.StoreItem();
+               wordCRUD.saveFile();
+           }
+           else if(menu == 2){
+               wordCRUD.searchLevel();
+           }
+           else if(menu == 3){
+               wordCRUD.searchWord();
            }
        }
 

@@ -1,0 +1,22 @@
+1|landscaping|조경
+2|weed|잡초
+3|liquid|액상의, 액체의
+2|landscaper|조경사, 정원사
+1|in advance|미리, 사전에
+3|hesitate|주저하다, 망설이다
+3|treatment|(약품 등에 의한) 처리
+2|complex|(건물) 단지
+1|lawn|잔디
+2|approximately|대략, 거의
+3|concern|우려, 걱정
+2|rescue|구조하다, 구출하다
+3|cage|우리
+2|outgrow|너무 자라다
+1|underfed|음식을 제대로 먹지 못한, 영양 부족의
+1|clip|자르다, 깎다
+1|be looking to do|~하기를 기대하다
+3|hop|깡충깡충 뛰다
+1|tear|뜯다, 찢다
+2|anticipation|기대, 고대
+1|convey|전달하다, 전하다
+1| apple|사과
